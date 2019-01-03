@@ -65,7 +65,7 @@ app.post("/webhook", function (req, res) {
           name = bodyObj.first_name;
           greeting = "Hi " + name + ". ";
         }
-        var message = greeting + "I'm the Exams Schedule Bot. I can tell you about your Exams. What Exmas would you like to know about?";
+        var message = greeting +"I'm SP Movie Bot. I can tell you various details regarding movies. What movie would you like to know about?";
         sendMessage(senderId, {text: message});
       });
     }
