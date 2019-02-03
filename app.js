@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
   res.send("Deployed!");
 });
 
-// Facebook Webhook
+// Facebook Webhooka
 // Used for verification
 app.get("/webhook", function (req, res) {
   if (req.query["hub.verify_token"] === process.env.VERIFICATION_TOKEN) {
