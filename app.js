@@ -3,6 +3,7 @@ var request = require("request");
 var bodyParser = require("body-parser");
 
 var app = express();
+const apiKey="196134a5";
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.listen((process.env.PORT || 5000));
